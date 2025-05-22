@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Hub - Timetable</title>
+  <link rel="stylesheet" href="Styles/timetable.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+  <!-- 🔥 Floating Clock -->
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #007bff;">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="home.php">Student Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="home.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="assignment.html">Assignments</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="timetable.html">Time Table</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="chat.html">Chats</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="remainders.html">Remainders</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="library.html">Library</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="settings.php">Settings</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <button id="dark-mode-toggle" class="btn btn-outline-light me-2 dark-mode-btn">🌙 Dark Mode</button>
+            <a href="logout.php" class="btn btn-danger logout-btn">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="floating-clock"></div>
+  <div class="container mt-4">
+    <div id="centered-clock"></div>
+    
+    <table class="timetable">
+      <!-- ... your timetable rows ... -->
+    </table>
+  </div>
+  <!-- Timetable Table -->
+  <div class="container mt-4">
+    <table class="timetable">
+      <tr>
+        <th>Day</th>
+        <th>09:00 - 09:55</th>
+        <th>10:00 - 10:55</th>
+        <th>11:00 - 11:55</th>
+        <th>12:00 - 12:55</th>
+        <th>01:00 - 01:55</th>
+        <th>02:00 - 02:55</th>
+        <th>03:00 - 03:55</th>
+        <th>04:00 - 05:30</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>MINOR / OE</td><td></td><td>AEC 104(S 408)</td><td></td><td>CSE 205(S 603)</td><td>CSE 205(S 603)</td><td></td><td></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>MINOR / OE</td><td>CSE 209(S 511)</td><td>CSE 209(S 511)</td><td></td><td>CSE 208(S 408)</td><td>CSE 208(S 408)</td><td>CSE 210(S 408)</td><td>CSE 209(S 408)</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>MINOR / OE</td><td>CSE 208(S 408)</td><td>CSE 206(C 302)</td><td>CSE 206(C 302)</td><td></td><td>VAC 106</td><td>VAC 106</td><td>VAC 103M</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>CSE 205(S 603)</td><td>CSE 205(S 603)</td><td>CSE 210(S 603)</td><td>CSE 210(S 603)</td><td></td><td>AEC 104(S 408)</td><td>AEC 104(S 408)</td><td>MINOR / OE</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>CSE 210(S 408)</td><td>CSE 210(S 408)</td><td>CSE 209(S 408)</td><td>CSE 209(S 408)</td><td></td><td>CSE 206(C 302)</td><td>CSE 206(C 302)</td><td>MINOR / OE</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td colspan="8">No Classes</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="Scripts/timetable.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <div id="particles-js"></div>
+</body>
+</html>

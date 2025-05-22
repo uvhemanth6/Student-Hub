@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #0c68a5, #4277a2, #99d7cc, #acb6e5);
+    z-index: 0;
+}
+
+.settings-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.dark-mode {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .settings-content {
+    background-color: rgba(30, 30, 30, 0.85);
+}
+
+.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+.dark-mode-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.dark-mode .dark-mode-btn {
+    background: rgba(50, 50, 50, 0.5);
+}
+.user-info-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-left: 6px solid #0c68a5;
+    font-size: 1.1rem;
+}
+
+.dark-mode .user-info-box {
+    background: rgba(30, 30, 30, 0.8);
+    border-left: 6px solid #99d7cc;
+    color: #e0e0e0;
+}
+
+.info-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #0c68a5;
+}
+
+.dark-mode .info-icon {
+    color: #99d7cc;
+}
+
+.profile-box {
+    background: rgba(255, 255, 255, 0.8);
+    border-left: 6px solid #0c68a5;
+}
+
+.profile-circle {
+    width: 60px;
+    height: 60px;
+    background: #0c68a5;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.initials {
+    user-select: none;
+}
+
+.dark-mode .profile-box {
+    background: rgba(30, 30, 30, 0.8);
+    border-left: 6px solid #99d7cc;
+    color: #e0e0e0;
+}
+
+.dark-mode .profile-circle {
+    background: #99d7cc;
+    color: #121212;
+}

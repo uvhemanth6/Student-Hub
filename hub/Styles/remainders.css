@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    transition: all 0.3s ease;
+    background-color: #f8f9fa; /* Light mode background */
+}
+
+/* 📌 Dark Mode Background */
+body.dark-mode {
+    background-color: #121212 !important; /* Override bg-light */
+    color: #e0e0e0;
+}
+
+/* 📌 Navbar Dark Mode */
+.navbar {
+    background-color: #007bff !important;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .navbar {
+    background: linear-gradient(90deg, #1f1f1f, #2c2c2c) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* 📌 Dark Mode Toggle Button */
+.dark-mode-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.dark-mode .dark-mode-btn {
+    background: rgba(50, 50, 50, 0.5);
+}
+
+.dark-mode-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Container */
+.page-container {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .page-container {
+    background-color: #121212;
+}
+
+/* Headings */
+h2 {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.dark-mode h2 {
+    color: #e0e0e0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Upload Section (Reminder Input) */
+.upload-section {
+    transition: all 0.3s ease;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.dark-mode .upload-section {
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+}
+
+.dark-mode .upload-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Form Elements */
+.form-control {
+    background-color: white;
+    color: #333;
+    border-color: #ced4da;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.dark-mode .form-control {
+    background: linear-gradient(145deg, #2c2c2c, #3c3c3c);
+    color: #e0e0e0;
+    border-color: #444;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .form-control::placeholder {
+    color: #888;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.dark-mode .btn-primary {
+    background: linear-gradient(45deg, #007bff, #66b0ff);
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.5);
+}
+
+.dark-mode .btn-primary:hover {
+    background: linear-gradient(45deg, #66b0ff, #007bff);
+    transform: scale(1.02);
+}
+
+/* Alarm Toggle Button */
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.dark-mode .btn-secondary {
+    background: linear-gradient(45deg, #6c757d, #b0b0b0);
+    border: none;
+    box-shadow: 0 2px 8px rgba(108, 117, 125, 0.5);
+}
+
+.dark-mode .btn-secondary:hover {
+    background: linear-gradient(45deg, #b0b0b0, #6c757d);
+    transform: scale(1.02);
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #b0b0b0;
+    border-color: #b0b0b0;
+    box-shadow: 0 0 5px rgba(176, 176, 176, 0.3);
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background: linear-gradient(45deg, #b0b0b0, #6c757d);
+    color: #121212;
+    box-shadow: 0 0 10px rgba(176, 176, 176, 0.5);
+}
+
+/* Delete Button */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.dark-mode .btn-danger {
+    background: linear-gradient(45deg, #dc3545, #ff5555);
+    border: none;
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.5);
+}
+
+.dark-mode .btn-danger:hover {
+    background: linear-gradient(45deg, #ff5555, #dc3545);
+    transform: scale(1.02);
+}
+
+/* Reminder List */
+.list-group-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
+}
+
+.dark-mode .list-group-item {
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    color: #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #444;
+}
+
+.dark-mode .list-group-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    border-color: #666;
+}
+
+.dark-mode .list-group-item strong {
+    color: #e0e0e0;
+}
+
+.dark-mode .list-group-item small {
+    color: #808080;
+}
+
+/* Additional Styling */
+.w-20 {
+    width: 20%;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #0c68a5, #4277a2, #99d7cc, #acb6e5);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    z-index: -2;
+    opacity: 0.8;
+  }
+  
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }

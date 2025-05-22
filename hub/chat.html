@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Student Hub</title>
+    
+    <!-- Bootstrap & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Styles/chat.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #007bff;">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="home.php">Student Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="home.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="assignment.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="timetable.html">Time Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white  fw-bold " href="chat.html">Chats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="notes.html">Notes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="remainders.html">Remainders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="library.html">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="settings.php">Settings</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <button id="dark-mode-toggle" class="btn btn-outline-light me-2 dark-mode-btn">🌙 Dark Mode</button>
+                        <a href="logout.php" class="btn btn-danger logout-btn">Logout <i class="fas fa-sign-out-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Chat Section -->
+    <main class="container mt-4">
+        <div class="card shadow-lg chat-box">
+            <div class="card-header bg-primary text-white text-center">
+                <h3><i class="fa-solid fa-comments"></i> Chat Room</h3>
+            </div>
+            <div class="card-body chat-container" id="chat-messages"></div>
+            <div class="card-footer d-flex">
+                <input type="text" id="messageInput" class="form-control me-2" placeholder="Type a message...">
+                <button id="sendMessage" class="btn btn-success"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating Chat Button -->
+    <button class="floating-btn" id="openChat"><i class="fa-solid fa-comments"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Chat Script -->
+    <script src="Scripts/chat.js">
+    </script>
+</body>
+</html>

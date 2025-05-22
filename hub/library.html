@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles/library.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="home.php">Student Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="assignment.html">Assignments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="timetable.html">Time Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chat.html">Chats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="remainders.html">Remainders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link text-white fw-bold" href="library.html">Library</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="settings.php">Settings</a></li>
+                    <li class="nav-item d-flex align-items-center">
+                        <button id="dark-mode-toggle" class="btn btn-outline-light me-2 dark-mode-btn">🌙 Dark Mode</button>
+                        <a href="logout.php" class="btn btn-danger logout-btn">Logout <i class="fas fa-sign-out-alt"></i></a>
+                    </li>
+                </ul>
+           
+            </div>
+        </div>
+    </nav>
+
+    <!-- Departments Section -->
+    <div class="container mt-4" id="departmentsContainer">
+        <h2 class="text-center mb-4">Library Departments</h2>
+        <div class="row" id="departments"></div>
+    </div>
+
+    <!-- Books Section (Initially Hidden) -->
+    <div class="container mt-4" id="booksSection" style="display: none;">
+        <h2 class="text-center mb-4">Books in <span id="deptName"></span> Department</h2>
+        <input type="text" id="searchBox" class="form-control mb-3" placeholder="Search books..." onkeyup="searchBooks()">
+        <button class="btn btn-secondary mb-3" onclick="goBack()">← Back To Departments</button>
+        <div class="row" id="books"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/library.js"></script>
+
+    <!-- Ensure departments load when the page loads -->
+    <script src="Scripts/library.js">
+    </script>
+    <!-- Particle Background Container -->
+<div id="particles-js"></div>
+<!-- Particles Library -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- Particles Config -->
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 },
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.5 },
+      "size": { "value": 3 },
+      "move": { "enable": true, "speed": 2 }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" }
+      },
+      "modes": {
+        "repulse": { "distance": 100 },
+        "push": { "particles_nb": 4 }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+</body>
+</html>

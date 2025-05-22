@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assignments</title>
+  <link rel="stylesheet" href="Styles/assignments.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #007bff;">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="home.php">Student Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="home.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-bold" href="assignment.html">Assignments</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="timetable.html">Time Table</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="chat.html">Chats</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="notes.html">Notes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="remainders.html">Remainders</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="library.html">Library</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="settings.php">Settings</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <button id="dark-mode-toggle" class="btn btn-outline-light me-2 dark-mode-btn">🌙 Dark Mode</button>
+            <a href="logout.php" class="btn btn-danger logout-btn">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Assignments</h2>
+    <div class="card p-4 shadow assignment-container">
+      <h5 class="mb-3">Add a New Assignment</h5>
+      <form id="assignment-form" class="row g-3">
+        <div class="col-md-6">
+          <input type="text" id="assignment-name" class="form-control" placeholder="Assignment Name" required />
+        </div>
+        <div class="col-md-4">
+          <input type="date" id="due-date" class="form-control" required />
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary w-100">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <h3 class="mt-5">Your Assignments</h3>
+    <div id="assignments-list" class="mt-3 row"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 50 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { quantity: 4 }
+        }
+      }
+    });
+  </script>
+  <script src="Scripts/assignments.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+/* library stylings starts */
+/* General Styling */
+
+
+/* 📌 Dark Mode Background */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* 📌 Navbar Dark Mode */
+.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+}
+
+.dark-mode .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* 📌 Dark Mode Toggle Button */
+.dark-mode-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 10px;
+}
+
+.dark-mode .dark-mode-btn {
+    background: rgba(50, 50, 50, 0.5);
+}
+
+.dark-mode-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/* Navbar Styling */
+
+.navbar {
+    background-color: #007bff;
+    margin-bottom: 50px; /*for maintaing spaces*/
+   }
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+    font-size: 1.5rem;
+}
+.nav-link {
+    color: white !important;
+    font-size: 1rem;
+}
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Department Cards */
+.card {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Box */
+#searchBox {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Back Button */
+.btn-secondary {
+    font-weight: bold;
+    background-color: #6c757d;
+    border: none;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Soft Copy Button */
+.soft-copy-btn {
+    float: right;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+
+}
+
+/* Floating Particles */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* Light Mode Animated Gradient */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #000;
+    background: linear-gradient(-45deg, #0c68a5, #4277a2, #99d7cc, #acb6e5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Dark Mode Animated Gradient */
+  .dark-mode body {
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #fff;
+  }
+  
+ 
+    
